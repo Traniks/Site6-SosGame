@@ -1,0 +1,155 @@
+.opinion {
+    position: relative;
+    padding: 35px 0 45px 0;
+    min-height: 100vh;
+
+    background: url("../img/opinion/bg.jpg") no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    &__wrapper {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 30px;
+    }
+
+    &__content {
+        max-width: 440px;
+    }
+
+    &__title {
+        margin: 0 0 0 0;
+        letter-spacing: 2px;
+    }
+
+    &__subtitle {
+        margin: 8px 0 0 0;
+        letter-spacing: 2px;
+    }
+
+    &__descr {
+        margin: 45px 0 0 0;
+    }
+
+    &__link {
+        margin: 40px auto 0;
+    }
+
+    &__press {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        row-gap: 30px;
+    }
+
+    &__press-box {
+        grid-column: 6 span;
+    }
+
+    .press-box {
+        padding: 10px 10px 15px 10px;
+        border-radius: 5px;
+        background: var(--bg-second);
+
+        &__head {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            grid-template-rows: repeat(2, 0.5fr);
+            column-gap: 20px;
+        }
+
+        &__img {
+            grid-row: 2 span;
+
+            width: 42px;
+            aspect-ratio: 1;
+
+            box-shadow: 6px 6px 0 0 var(--text-active);
+            border-radius: 100%;
+        }
+
+        &__name {
+            grid-column: 3 span;
+
+            font-style: initial;
+            letter-spacing: 2px;
+            color: var(--text-active);
+        }
+
+        &__position {
+            grid-column: 3 span;
+            opacity: 0.5;
+        }
+
+        &__twitter {
+            position: relative;
+            grid-row: 1/2;
+            grid-column: 6/7;
+
+            &:before {
+                content: "";
+                position: absolute;
+                background: url("../icons/twitter.svg") no-repeat;
+                top: 0;
+                right: 0;
+                width: 20px;
+                height: 16px;
+            }
+        }
+
+        &__quote {
+            display: block;
+            margin: 20px 0 0 0;
+        }
+
+        &__time {
+            display: block;
+            margin: 15px 0 0 0;
+            opacity: 0.5;
+        }
+    }
+}
+
+@media (min-width: 440px) {
+    .opinion {
+        &__link {
+            margin: 40px 0 0;
+        }
+
+        &__press-box {
+            &:nth-child(1) {
+                grid-column: 2 / 5 span;
+            }
+
+            &:nth-child(2) {
+                grid-column: 5 span;
+            }
+
+            &:nth-child(3) {
+                grid-column: 2 / 5 span;
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .opinion {
+        padding: 70px 0 70px 0;
+
+        &__wrapper {
+            grid-template-columns: repeat(2, 0.5fr);
+        }
+
+        &__content {
+            flex-direction: column;
+            justify-content: center;
+            display: flex;
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    .opinion {
+        padding: 160px 0;
+    }
+}

@@ -1,0 +1,37 @@
+:root {
+    // background
+    --bg-main: #000000;
+    --bg-second: rgba(255, 255, 255, 0.08);
+
+    // table
+    --table: #97979736;
+    --table-bg: rgba(0, 0, 0, 0.5);
+
+    //text
+    --text-main: #ffffff;
+    --text-active: #FFB548;
+
+    // input
+    --input: #979797;
+    --input-text: #FFB548;
+
+    //btn
+    --btnColor-default_bg: #FFB548;
+    --btnColor-default_text: #1A1917;
+
+    --btnColor-hover_bg: #ffffff;
+    --btnColor-hover_text: #1A1917;
+
+    --btnColor-focus_bg: #FFB548;
+    --btnColor-focus_text: #1A1917;
+    --btnBorder-focus_border: #ffffff;
+
+    // z-index
+    --index-elem-1: 1; // Для наползающих элементов
+    --index-elem-2: 2; // Для наползающих элементов
+    --index-elem-3: 3; // Для наползающих элементов
+    --index-mask: 4; // Для масок и оверлеев
+    --index-sidebar: 5; // Для сайдбаров
+    --index-modal: 6; // Для модалок
+    --index-topmost: 7; // Для перекрывающих все элементов
+}

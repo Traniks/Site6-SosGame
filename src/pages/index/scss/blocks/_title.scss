@@ -1,0 +1,52 @@
+.text {
+    &-OpenSans400 {
+        font-family: "Open Sans";
+        font-weight: 400;
+        color: var(--text-main);
+        text-decoration: none;
+
+        &_fz18 {
+            @include adaptive("font-size", 18, 14, 1);
+        }
+
+        &_fz14 {
+            @include adaptive("font-size", 14, 12, 1);
+        }
+
+    }
+
+    &-OpenSans700 {
+        font-family: "Open Sans";
+        font-weight: 700;
+        color: var(--text-main);
+        text-decoration: none;
+
+        &_fz12 {
+            font-size: 12px;
+        }
+    }
+
+    &-BebasNeue700 {
+        font-family: "Bebas Neue";
+        font-weight: 700;
+        color: var(--text-main);
+        text-decoration: none;
+
+        &_fz80 {
+            @include adaptive("font-size", 80, 33, 1);
+        }
+
+        &_fz36 {
+            @include adaptive("font-size", 36, 21, 1);
+        }
+
+        &_fz24 {
+            @include adaptive("font-size", 24, 18, 1);
+        }
+
+        &_fz24-21 {
+            @include adaptive("font-size", 24, 21, 1);
+        }
+    }
+
+}

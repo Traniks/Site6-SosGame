@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="scss/index.scss">
+    <title>Sos Game</title>
+</head>
+<body>
+
+    <main>
+
+        <section class="promo" id="promo">
+
+            <header class="header">
+                <div class="container">
+                    <div class="header__wrapper">
+
+                        <a href="#" class="header__logo" aria-label="Restart the site">
+                            <img class="header__logo-img" src="icons/logo.png" alt="Sos logo">
+                        </a>
+
+                        <nav class="header__nav" aria-label="General">
+                            <ul class="header__list text-OpenSans700 text-OpenSans700_fz12 header__list">
+
+                                <li class="header__list-item">
+                                    <a class="text-OpenSans700 text-OpenSans700_fz12 header__list-link" href="#promo" data-lang="header_link-1"></a>
+                                </li>
+
+                                <li class="header__list-item">
+                                    <a class="text-OpenSans700 text-OpenSans700_fz12 header__list-link" href="#description" data-lang="header_link-2"></a>
+                                </li>
+
+                                <li class="header__list-item">
+                                    <a class="text-OpenSans700 text-OpenSans700_fz12 header__list-link" href="#features" data-lang="header_link-3"></a>
+                                </li>
+
+                                <li class="header__list-item">
+                                    <a class="text-OpenSans700 text-OpenSans700_fz12 header__list-link" href="#requirements" data-lang="header_link-4"></a>
+                                </li>
+
+                                <li class="header__list-item">
+                                    <a class="text-OpenSans700 text-OpenSans700_fz12 header__list-link" href="#opinion" data-lang="header_link-5"></a>
+                                </li>
+
+                                <li class="header__list-item">
+                                    <a class="header__icon header__list-link" href="#" aria-label="Icon xbox"></a>
+                                    <a class="header__icon header__list-link" href="#" aria-label="Icon steam"></a>
+                                </li>
+
+                            </ul>
+                        </nav>
+
+                        <div class="header__menu">
+
+                            <div class="header__lang-box">
+
+                                <button class="text-OpenSans700 text-OpenSans700_fz12 header__lang-btn"></button>
+
+                                <ul class="header__lang-list" aria-label="Languages list">
+                                    <li class="header__lang-item">
+                                        <button class="text-OpenSans700 text-OpenSans700_fz12 header__lang-select" data-btn="eng">eng</button>
+                                    </li>
+                                    <li class="header__lang-item">
+                                        <button class="text-OpenSans700 text-OpenSans700_fz12 header__lang-select" data-btn="rus">rus</button>
+                                    </li>
+                                    <li class="header__lang-item">
+                                        <button class="text-OpenSans700 text-OpenSans700_fz12 header__lang-select" data-btn="fra">fra</button>
+                                    </li>
+                                    <li class="header__lang-item">
+                                        <button class="text-OpenSans700 text-OpenSans700_fz12 header__lang-select" data-btn="deu">deu</button>
+                                    </li>
+                                </ul>
+
+                            </div>
+
+                            <div class="header__icon-box">
+                                <a class="header__icon" aria-label="Icon xbox"></a>
+                                <a class="header__icon" aria-label="Icon steam"></a>
+                            </div>
+
+                            <button class="header__hamburger" aria-label="Open menu">
+                                <span class="header__hamburger-top"></span>
+                                <span class="header__hamburger-middle"></span>
+                                <span class="header__hamburger-bottom"></span>
+                            </button>
+
+                        </div>
+
+                    </div>
+                </div>
+            </header>
+
+            <div id="swiper-promo" class="swiper">
+
+                <div class="swiper-wrapper">
+                        
+                    <div class="swiper-slide">
+                        <img src="img/promo/slide-1.jpg" alt="slide 1">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/promo/slide-2.jpg" alt="slide 2">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/promo/slide-3.jpg" alt="slide 3">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/promo/slide-4.jpg" alt="slide 4">
+                    </div>
+
+                </div>
+                
+            </div>
+
+            <div class="container">
+
+                <div class="promo__wrapper">
+                    <div class="promo__content">
+
+                        <h1 class="text-BebasNeue700 text-BebasNeue700_fz80 promo__title" data-lang="promo_title"></h1>
+                        <h2 class="text-BebasNeue700 text-BebasNeue700_fz24 promo__subtitle" data-lang="promo_subtitle"></h2>
+        
+                        <a class="link promo__link" href="#" aria-label="Open Steam" data-lang="promo_link"></a>
+
+                    </div>
+
+                    <div class="promo__navigation">
+
+                        <a href="#description" class="text-OpenSans700 text-OpenSans700_fz12 promo__arrow-down" aria-label="Next section" data-lang="promo_arrow-down"></a>
+
+                        <div class="promo__navigation-box">
+                            <div class="swiper-button-prev swiper-button-prev__promo"></div>
+                            <div class="swiper-pagination swiper-pagination__promo"></div>
+                            <div class="swiper-button-next swiper-button-next__promo"></div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="description" id="description">
+            <div class="container">
+                <div class="description__wrapper">
+
+                    <div class="description__content">
+
+                        <h2 class="text-BebasNeue700 text-BebasNeue700_fz24 description__title" data-lang="description_title"></h2>
+                        <h3 class="text-BebasNeue700 text-BebasNeue700_fz80 description__subtitle" data-lang="description_subtitle"></h3>
+                        
+                        <hr class="description__hr">
+
+                        <p class="text-OpenSans400 text-OpenSans400_fz18 description__text description__text_first-child" data-lang="description__text-1">
+                            <!-- FIXME: -->
+                            Each round, <span>you</span> and <span>15</span> other contestants compete to escape a deadly island filled with monsters. The trick is: <span>three</span> people can survive. Will you run solo or form friendships with others to escape? 
+                        </p>
+
+                        <br>
+
+                        <p class="text-OpenSans400 text-OpenSans400_fz18 description__text" data-lang="description__text-2">
+                            <!-- FIXME: -->
+                            Making the right decisions could be the difference between <u>life and death</u>.
+                        </p>
+
+                    </div>
+
+                    <div id="swiper-description" class="description__slider swiper">
+
+                        <div class="swiper-wrapper">
+
+                            <div class="swiper-slide">
+                                <img src="img/description/slide-1.jpg" alt="slide 1">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/description/slide-2.jpg" alt="slide 2">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/description/slide-3.jpg" alt="slide 3">
+                            </div>
+
+                        </div>
+
+                        <div class="swiper-button-prev swiper-button-prev__cards"></div>
+                        <div class="swiper-button-next swiper-button-next__cards"></div>
+                        <div class="swiper-pagination swiper-pagination__cards"></div>
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="features" id="features">
+            <div class="container">
+                <div class="features__wrapper">
+
+                    <h2 class="text-BebasNeue700 text-BebasNeue700_fz24 features__title" data-lang="features_title"></h2>
+                    <h3 class="text-BebasNeue700 text-BebasNeue700_fz80 features__subtitle" data-lang="features_subtitle"></h3>
+                    
+                    <div class="features__content">
+
+                        <div class="features__box features__box_active">
+                            <button class="text-BebasNeue700 text-BebasNeue700_fz36 features__box-title features__box-title_active" aria-label="Open feature 1" data-lang="features_box-title-1"></button>
+                            <p class="text-OpenSans400 text-OpenSans400_fz18 features__box-description features__box-description_active" data-lang="features_box-description-1"></p>
+                        </div>
+
+                        <div class="features__box">
+                            <button class="text-BebasNeue700 text-BebasNeue700_fz36 features__box-title" aria-label="Open feature 1" data-lang="features_box-title-2"></button>
+                            <p class="text-OpenSans400 text-OpenSans400_fz18 features__box-description" data-lang="features_box-description-2"></p>
+                        </div>
+
+                        <div class="features__box">
+                            <button class="text-BebasNeue700 text-BebasNeue700_fz36 features__box-title" aria-label="Open feature 1" data-lang="features_box-title-3"></button>
+                            <p class="text-OpenSans400 text-OpenSans400_fz18 features__box-description" data-lang="features_box-description-3"></p>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="requirements" id="requirements">
+            <div class="container">
+
+                <div class="requirements__content">
+                    <h2 class="text-BebasNeue700 text-BebasNeue700_fz24 requirements__title" data-lang="requirements_title"></h2>
+                    <h3 class="text-BebasNeue700 text-BebasNeue700_fz80 requirements__subtitle" data-lang="requirements_subtitle"></h3>
+                </div>
+
+                <dl class="requirements__table">
+
+                    <div class="requirements__table-box">
+                        <dt class="text-BebasNeue700 text-BebasNeue700_fz24 requirements__table-title" data-lang="requirements_table-title-1"></dt>
+                        <dd class="text-OpenSans400 text-OpenSans400_fz18 requirements__table-descr" data-lang="requirements_table-descr-1"></dd>
+                    </div>
+
+                    <div class="requirements__table-box">
+                        <dt class="text-BebasNeue700 text-BebasNeue700_fz24 requirements__table-title" data-lang="requirements_table-title-2"></dt>
+                        <dd class="text-OpenSans400 text-OpenSans400_fz18 requirements__table-descr" data-lang="requirements_table-descr-2"></dd>
+                    </div>
+
+                    <div class="requirements__table-box">
+                        <dt class="text-BebasNeue700 text-BebasNeue700_fz24 requirements__table-title" data-lang="requirements_table-title-3"></dt>
+                        <dd class="text-OpenSans400 text-OpenSans400_fz18 requirements__table-descr" data-lang="requirements_table-descr-3"></dd>
+                    </div>
+
+                    <div class="requirements__table-box">
+                        <dt class="text-BebasNeue700 text-BebasNeue700_fz24 requirements__table-title" data-lang="requirements_table-title-4"></dt>
+                        <dd class="text-OpenSans400 text-OpenSans400_fz18 requirements__table-descr" data-lang="requirements_table-descr-4"></dd>
+                    </div>
+
+                    <div class="requirements__table-box">
+                        <dt class="text-BebasNeue700 text-BebasNeue700_fz24 requirements__table-title" data-lang="requirements_table-title-5"></dt>
+                        <dd class="text-OpenSans400 text-OpenSans400_fz18 requirements__table-descr" data-lang="requirements_table-descr-5"></dd>
+                    </div>
+
+                </dl>
+
+            </div>
+        </section>
+
+        <section class="opinion" id="opinion">
+            <div class="container">
+                <div class="opinion__wrapper">
+
+                    <div class="opinion__content">
+
+                        <h2 class="text-BebasNeue700 text-BebasNeue700_fz24 opinion__title" data-lang="opinion_title"></h2>
+                        <h3 class="text-BebasNeue700 text-BebasNeue700_fz80 opinion__subtitle" data-lang="opinion_subtitle"></h3>
+                        <p class="text-OpenSans400 text-OpenSans400_fz18 opinion__descr" data-lang="opinion_descr"></p>
+                        <a href="#" class="link opinion__link" aria-label="Open testemonials" data-lang="opinion_link"></a>
+
+                    </div>
+
+                    <div class="opinion__press">
+
+                        <blockquote class="press-box opinion__press-box">
+
+                            <div class="press-box__head">
+                                <img src="img/opinion/photo1.png" alt="photo 1" class="press-box__img">
+                                <cite class="text-BebasNeue700 text-BebasNeue700_fz24-21 press-box__name" data-lang="press-box_name-1"></cite>
+                                <span class="text-OpenSans400 text-OpenSans400_fz18 press-box__position" data-lang="press-box_position-1"></span>
+                                <a href="#" class="press-box__twitter" aria-label="Open twitter Evan Lahti"></a>
+                            </div>
+
+                            <q class="text-OpenSans400 text-OpenSans400_fz18 press-box__quote" data-lang="press-box_quote-1"></q>
+                            <time class="text-OpenSans400 text-OpenSans400_fz14 press-box__time" datetime="2018-10-18" data-lang="press-box_time-1"></time>
+
+                        </blockquote>
+
+                        <blockquote class="press-box opinion__press-box">
+
+                            <div class="press-box__head">
+                                <img src="img/opinion/photo2.png" alt="photo 2" class="press-box__img">
+                                <cite class="text-BebasNeue700 text-BebasNeue700_fz24-21 press-box__name" data-lang="press-box_name-2"></cite>
+                                <span class="text-OpenSans400 text-OpenSans400_fz18 press-box__position" data-lang="press-box_position-2"></span>
+                                <a href="#" class="press-box__twitter" aria-label="Open twitter Jada Griffin"></a>
+                            </div>
+
+                            <q class="text-OpenSans400 text-OpenSans400_fz18 press-box__quote" data-lang="press-box_quote-2"></q>
+                            <time class="text-OpenSans400 text-OpenSans400_fz14 press-box__time" datetime="2018-12-21" data-lang="press-box_time-2"></time>
+
+                        </blockquote>
+
+                        <blockquote class="press-box opinion__press-box">
+
+                            <div class="press-box__head">
+                                <img src="img/opinion/photo3.png" alt="photo 3" class="press-box__img">
+                                <cite class="text-BebasNeue700 text-BebasNeue700_fz24-21 press-box__name" data-lang="press-box_name-3"></cite>
+                                <span class="text-OpenSans400 text-OpenSans400_fz18 press-box__position" data-lang="press-box_position-3"></span>
+                                <a href="#" class="press-box__twitter" aria-label="Open twitter Aaron Williams"></a>
+                            </div>
+
+                            <q class="text-OpenSans400 text-OpenSans400_fz18 press-box__quote" data-lang="press-box_quote-3"></q>
+                            <time class="text-OpenSans400 text-OpenSans400_fz14 press-box__time" datetime="2018-12-24" data-lang="press-box_time-3"></time>
+
+                        </blockquote>
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="newsletter" id="newsletter">
+            <div class="container">
+                <div class="newsletter__wrapper">
+
+                    <div class="newsletter__box">
+                        
+                        <picture class="newsletter__relic">
+                            <!-- <source srcset="#"> -->
+                            <img class="newsletter__relic-img" src="img/newsletter/relic.png" alt="relic">
+                        </picture>
+    
+    
+                        <div class="newsletter__content">
+    
+                            <h2 class="text-BebasNeue700 text-BebasNeue700_fz24 newsletter__title" data-lang="newsletter_title"></h2>
+                            <h3 class="text-BebasNeue700 text-BebasNeue700_fz80 newsletter__subtitle" data-lang="newsletter_subtitle"></h3>
+                            <p class="text-OpenSans400 text-OpenSans400_fz18 newsletter__descr" data-lang="newsletter_descr"></p>
+                        </div>
+    
+                        <form action="#" class="newsletter__form" method="post">
+                            <label class="newsletter__form-lable">
+                                <span class="text-OpenSans400 text-OpenSans400_fz14 newsletter__form-title" data-lang="newsletter_form-title"></span>
+                                <input class="newsletter__form-input" required type="email" name="email" placeholder="aliciliniavopir@gmail.com">
+                            </label>
+                            <button class="link newsletter__form-button" type="submit" data-lang="newsletter_form-button"></button>
+                        </form>
+    
+                    </div>
+    
+                    <footer class="footer">
+                        <div class="container">
+                    
+                            <nav class="footer__nav">
+                    
+                                <a class="footer__logo" href="#">
+                                    <img src="icons/logo.png" alt="Sos logo">
+                                </a>
+                    
+                                <ul class="footer__menu">
+                    
+                                    <li class="footer__menu-item">
+                                        <a class="text-OpenSans700 text-OpenSans700_fz12 header__list-link" href="#promo" data-lang="header_link-1">Main</a>
+                                    </li>
+
+                                    <li class="footer__menu-item">
+                                        <a class="text-OpenSans700 text-OpenSans700_fz12 header__list-link" href="#description" data-lang="header_link-2">About</a>
+                                    </li>
+
+                                    <li class="footer__menu-item">
+                                        <a class="text-OpenSans700 text-OpenSans700_fz12 header__list-link" href="#features" data-lang="header_link-3">Game features</a>
+                                    </li>
+
+                                    <li class="footer__menu-item">
+                                        <a class="text-OpenSans700 text-OpenSans700_fz12 header__list-link" href="#requirements" data-lang="header_link-4">System requirements</a>
+                                    </li>
+
+                                    <li class="footer__menu-item">
+                                        <a class="text-OpenSans700 text-OpenSans700_fz12 header__list-link" href="#opinion" data-lang="header_link-5">Quotes</a>
+                                    </li>
+                    
+                                </ul>
+                    
+                                <ul class="footer__socials">
+                    
+                                    <li class="footer__socials-item">
+                                        <a class="footer__socials-link" href="#" aria-label="facebook icon"></a>
+                                    </li>
+                    
+                                    <li class="footer__socials-item">
+                                        <a class="footer__socials-link" href="#" aria-label="facebook icon"></a>
+                                    </li>
+                    
+                                    <li class="footer__socials-item">
+                                        <a class="footer__socials-link" href="#" aria-label="facebook icon"></a>
+                                    </li>
+                    
+                                    <li class="footer__socials-item">
+                                        <a class="footer__socials-link" href="#" aria-label="facebook icon"></a>
+                                    </li>
+                    
+                                </ul>
+                    
+                            </nav>
+                    
+                            <div class="footer__bottom">
+                    
+                                <div class="text-OpenSans400 text-OpenSans400_fz14 footer__copyright" data-lang="footer_copyright"></div>
+                    
+                                <p class="footer__privacy-policy">
+                                    <span class="text-OpenSans700 text-OpenSans700_fz12" data-lang="footer_privacy-policy"></span>
+                                    <span class="text-OpenSans700 text-OpenSans700_fz12" data-lang="footer_terms"></span>
+                                    <span class="text-OpenSans700 text-OpenSans700_fz12" data-lang="footer_norms"></span> 
+                                </p>
+                    
+                            </div>
+                    
+                        </div>
+                    </footer>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    
+    <script src="js/index.js"></script>
+</body>
+</html>

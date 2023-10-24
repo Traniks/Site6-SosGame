@@ -1,0 +1,155 @@
+.promo {
+    position: relative;
+    min-height: 100vh;
+    background: rgba(0, 0, 0, 0);
+
+    #swiper-promo {
+        position: absolute;
+        z-index: var(--index-elem-1);
+        width: 100%;
+        height: 100vh;
+
+        .swiper-slide {
+            img {
+                width: 100%;
+                height: 100vh;
+                object-fit: cover;
+            }
+        }
+    }
+
+    &__wrapper {
+        display: flex;
+        position: relative;
+        padding: 0 0 50px 0;
+        min-height: 100vh;
+
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+
+        z-index: var(--index-elem-2);
+    }
+
+    &__content {
+        margin: auto 0 auto 0;
+        text-align: center;
+    }
+
+    &__title {
+        margin: 0 0 0 0;
+        letter-spacing: 3px;
+    }
+
+    &__subtitle {
+        margin: 8px 0 0 0;
+        text-wrap: balance;
+        letter-spacing: 3px;
+    }
+
+    &__link {
+        margin: 12px auto 0 auto;
+    }
+
+    &__navigation {
+        display: flex;
+        justify-content: space-between;
+        gap: 45px;
+    }
+
+    &__arrow-down {
+        display: flex;
+
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+
+        text-transform: uppercase;
+        letter-spacing: 1px;
+
+        &:after {
+            content: "";
+            background: url("../icons/arrow.svg") no-repeat;
+            width: 22px;
+            height: 12px;
+        }
+    }
+
+    &__navigation-box {
+        position: relative;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        gap: 20px;
+
+        .swiper-pagination-bullets.swiper-pagination-horizontal {
+            bottom: unset;
+            top: unset;
+            left: unset;
+            width: unset;
+        }
+
+        .swiper-pagination {
+            position: relative;
+            z-index: var(--index-elem-3);
+
+            &-bullet {
+                width: 16px;
+                height: 16px;
+                background: rgba(0, 0, 0, 0);
+                border: 1px var(--text-main) solid;
+                opacity: 1;
+            }
+
+            &-bullet-active {
+                background: var(--text-main);
+            }
+        }
+
+        .swiper-button-prev {
+            position: relative;
+
+            margin-top: unset;
+            height: unset;
+            width: unset;
+
+            top: unset;
+            right: unset;
+            left: unset;
+
+            color: var(--text-main);
+            z-index: var(--index-elem-3);
+
+            &:after {
+                font-size: 26px;
+            }
+        }
+
+        .swiper-button-next {
+            position: relative;
+
+            margin-top: unset;
+            height: unset;
+            width: unset;
+
+            top: unset;
+            right: unset;
+            left: unset;
+
+            color: var(--text-main);
+            z-index: var(--index-elem-3);
+
+            &:after {
+                font-size: 26px;
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .promo {
+        &__link {
+            margin: 40px auto 0 auto;
+        }
+    }
+}

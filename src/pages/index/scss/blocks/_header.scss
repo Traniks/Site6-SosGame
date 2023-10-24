@@ -1,0 +1,318 @@
+.header {
+    position: absolute;
+    padding: 10px 0;
+    width: 100%;
+
+    z-index: var(--index-elem-3);
+
+    &:after {
+        content: "";
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.7);
+        opacity: 0;
+        z-index: var(--index-elem-1);
+        transition: 0.5s;
+    }
+
+    &_active {
+        &:after {
+            opacity: 1;
+        }
+    }
+
+    &__wrapper {
+        display: flex;
+
+        min-height: 52px;
+
+        justify-content: space-between;
+        align-items: center;
+        z-index: var(--index-elem-3);
+    }
+
+
+    &__logo {
+        position: relative;
+        @include adaptive("width", 55, 32, 1);
+        z-index: var(--index-elem-2);
+    }
+
+    &__logo-img {
+        width: 100%;
+        height: 100%;
+    }
+
+
+    &__nav {
+        display: flex;
+        position: fixed;
+
+        width: 100%;
+        height: 100%;
+
+        justify-content: center;
+
+        top: -200%;
+        left: 0;
+
+        background-color: rgba(0, 0, 0, 0.6);
+        transition: 0.5s;
+
+        &_active {
+            top: 0;
+            z-index: var(--index-elem-1);
+        }
+    }
+
+    &__list {
+        display: flex;
+
+        flex-direction: column;
+        align-items: start;
+        justify-content: center;
+
+        gap: 35px;
+
+        list-style-type: none;
+        z-index: var(--index-topmost);
+    }
+
+    &__list-item {
+
+        a {
+            font-size: 25px;
+            text-transform: uppercase;
+        }
+
+        &:last-child {
+            display: flex;
+            gap: 15px;
+        }
+    }
+
+    &__icon {
+        &:before {
+            content: "";
+            display: block;
+            width: 32px;
+            height: 32px;
+            transition: 0.3s;
+        }
+
+        &:nth-child(1) {
+            &:before {
+                background: url("../icons/header/xbox.svg") no-repeat;
+            }
+
+            &:hover {
+                &:before {
+                    background: url("../icons/header/xbox-active.svg") no-repeat;
+                }
+            }
+        }
+
+        &:nth-child(2) {
+            &:before {
+                background: url("../icons/header/steam.svg") no-repeat;
+            }
+
+            &:hover {
+                &:before {
+                    background: url("../icons/header/steam-active.svg") no-repeat;
+                }
+            }
+        }
+    }
+
+    &__menu {
+        width: max-content;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+        z-index: var(--index-topmost);
+    }
+
+    &__lang-box {
+        display: flex;
+        position: relative;
+        align-items: center;
+
+        height: 20px;
+
+        border-right: solid 1px var(--text-main);
+        padding-right: 15px;
+
+        &:hover {
+            .header__lang-list {
+                visibility: visible;
+                pointer-events: all;
+                opacity: 1;
+            }
+        }
+    }
+
+    &__lang-btn {
+        display: block;
+        position: relative;
+        padding: 0 15px 0 0;
+
+        border: none;
+        background-color: rgba(0, 0, 0, 0);
+        text-transform: uppercase;
+        transition: 0.3s;
+
+        &:after {
+            content: "";
+            position: absolute;
+            top: 50%;
+            transform: translatey(-50%);
+            right: 0;
+            width: 10px;
+            height: 6px;
+            background: url("../icons/header/arrow.svg") no-repeat;
+            transition: 0.3s;
+        }
+
+        &:hover {
+            color: var(--text-active);
+
+            &:after {
+                background: url("../icons/header/arrow-active.svg") no-repeat;
+                transform: translateY(-50%) rotate(180deg);
+            }
+        }
+    }
+
+    &__lang-list {
+        display: flex;
+        position: absolute;
+
+        margin: 0;
+        padding: 5px;
+
+        width: 55px;
+
+        top: 100%;
+        left: -5px;
+
+        flex-direction: column;
+        visibility: hidden;
+        pointer-events: none;
+        opacity: 0;
+        border-radius: 3px;
+
+        list-style: none;
+
+        background: rgba(0, 0, 0, 0.75);
+        transition: opacity 0.3s, visibility 0.3s;
+    }
+
+    &__lang-item {
+        .header__lang-select {
+            border: none;
+            background-color: rgba(0, 0, 0, 0);
+            text-transform: uppercase;
+
+            &_hidden {
+                display: none;
+            }
+        }
+
+        &:hover {
+            .header__lang-select {
+                color: var(--text-active);
+            }
+        }
+    }
+
+    &__icon-box {
+        display: none;
+        gap: 15px;
+    }
+
+    &__hamburger {
+        position: relative;
+        display: flex;
+
+        width: 24px;
+        height: 18px;
+
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 4px;
+
+        cursor: pointer;
+        border: none;
+        background-color: rgba(0, 0, 0, 0);
+
+        span {
+            display: block;
+            height: 3px;
+            width: 100%;
+            background-color: var(--text-main);
+            border-radius: 5px;
+            transition: 0.3s;
+
+            &:nth-child(3) {
+                width: 70%;
+            }
+        }
+
+        &_active {
+            span {
+                &:nth-child(3) {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    .header {
+        padding: 20px 0;
+
+        &__nav {
+            top: 0;
+            width: auto;
+            height: auto;
+            position: relative;
+            background-color: rgba(0, 0, 0, 0);
+            transition: 0.0s;
+        }
+
+        &__list {
+            padding: 0 0 0 0;
+            flex-direction: row;
+            gap: 45px
+        }
+
+        &__list-item {
+
+            a {
+                @include adaptive("font-size", 16, 12, 1);
+            }
+
+            &:last-child {
+                display: none;
+            }
+        }
+
+        &__lang-btn {
+            @include adaptive("font-size", 16, 12, 1);
+        }
+
+        &__icon-box {
+            display: flex;
+            gap: 10px;
+        }
+
+        &__hamburger {
+            display: none;
+        }
+    }
+}

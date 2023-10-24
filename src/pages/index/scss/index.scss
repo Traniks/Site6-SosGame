@@ -1,0 +1,58 @@
+@import "libs/normalize";
+@import "libs/fonts";
+
+@import 'swiper/css';
+@import 'swiper/css/navigation';
+@import 'swiper/css/pagination';
+
+
+@import "base/mixins";
+@import "base/variables";
+
+@import "blocks/title";
+@import "blocks/link-btn";
+
+@import "blocks/header";
+@import "blocks/footer";
+@import "blocks/slider";
+
+@import "section/promo";
+@import "section/description";
+@import "section/features";
+@import "section/requirements";
+@import "section/opinion";
+@import "section/newsletter";
+
+* {
+    padding: 0;
+    margin: 0;
+
+    box-sizing: border-box;
+
+    font-family: sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    position: relative;
+    background-color: var(--bg-main);
+}
+
+main {
+    height: 100vh;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+}
+
+section {
+    scroll-snap-align: start;
+}
+
+.container {
+    max-width: 1200px;
+    padding: 0 15px;
+    margin: 0 auto;
+}

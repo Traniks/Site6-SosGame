@@ -1,0 +1,112 @@
+.features {
+    position: relative;
+    padding: 85px 0;
+    min-height: 100vh;
+
+    background: url("../img/features/bg.jpg") no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    &__wrapper {
+        margin: 0 0 0 50px;
+    }
+
+    &__title {
+        margin: 0 0 0 0;
+        letter-spacing: 3px;
+    }
+
+    &__subtitle {
+        margin: 4px 0 0 0;
+        letter-spacing: 3px;
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 30px;
+    }
+
+    &__box {
+        position: relative;
+        transition: 1s;
+
+        &:before {
+            content: "";
+            position: absolute;
+            overflow: hidden;
+            width: 2px;
+            height: 0%;
+
+            left: -18px;
+            top: 18px;
+
+            border-radius: 2px;
+            border: none;
+            background: var(--text-main);
+            transition: 0.5s;
+        }
+
+        &_active {
+            &:before {
+                height: 100%;
+            }
+        }
+    }
+
+    &__box-title {
+        position: relative;
+        display: block;
+        border: none;
+        background: rgba(0, 0, 0, 0);
+        color: var(--text-active);
+        transition: 0.5s;
+        text-transform: uppercase;
+
+        &:before {
+            content: "";
+            position: absolute;
+            width: 14px;
+            height: 14px;
+
+            top: 2px;
+            left: -26px;
+
+            border-radius: 100%;
+            border: 2px solid var(--text-main);
+            transition: 0.5s;
+        }
+
+        &_active {
+            &:before {
+                background: var(--text-main);
+            }
+        }
+    }
+
+    &__box-description {
+        max-height: 0vh;
+        position: relative;
+        margin: 0 0 0 0;
+        overflow: hidden;
+        transition: 0.3s;
+
+        &_active {
+            margin: 10px 0 0 0;
+            max-height: 100vh;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .features {
+        padding: 100px 0;
+    }
+}
+
+@media (min-width: 992px) {
+    .features {
+        padding: 160px 0;
+    }
+}
